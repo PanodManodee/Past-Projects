@@ -1,0 +1,371 @@
+* {box-sizing: border-box;}
+
+/*%%%%%%%%%%%  Main Menu  %%%%%%%%%%*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif, serif;
+    position: relative;
+    /*z-index: 1;*/
+}
+
+body {
+    display: flex; 
+    flex-direction: column;
+}
+
+
+
+div#top {
+    background-color: #262626;
+}
+
+ul#menu{
+	list-style-type: none;
+	margin:0;
+	padding:1.4em;
+}
+
+#menu li{
+	text-align:center;
+	display:inline;
+  border-right: 1px dashed white;
+}
+
+#menu a{
+	padding:1.5em;
+  padding-right: 5%;
+  padding-left: 5%;
+	color:white;
+}
+
+#menu a:link, #menu a:visited{
+	text-decoration: none;
+}
+
+#menu a:hover, #menu a:active{
+	text-decoration:underline;
+	background-color:#444444;
+}
+
+/* %%%%%%%%%%%%  The main body starts here  %%%%%%%%%%%%%%%*/
+
+div#content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    margin: 0px;
+}
+
+/*Home Page*/
+
+div#head {
+  height: 17em;
+  background-color: #616161;
+  display: flex;
+  flex-direction: row;
+}
+
+div#banner{
+  padding-left: 15em;
+  padding-top: 1.5em;
+  width: 75%;
+  color: whitesmoke;
+}
+
+#banner h1{
+  font-size: 3em;
+}
+#banner h3{
+  font-family: 'Lucida Handwriting', cursive;
+  padding-left: 15em;
+  text-align: center;
+}
+
+div#logo{
+  width: 25%;
+  img{width: 75%; margin-left: auto; margin-right: auto;}
+}
+
+div#main {                          
+    text-align: center;
+    padding: 20px;
+    /*padding-top: 3em;*/
+}
+#main h2{font-size: 2.25em; margin: 1.5em;}
+
+#main input[type="button"] {
+  background-color: aquamarine;
+  border: none;
+  border-radius: 3em;
+  width: 12em;
+  height: 3em;
+  font-family: 'Garamond', serif;
+  font-size: 1.5em;
+  margin: 2em;
+}
+
+#main input[type="button"]:hover, #main input[type="button"]:active {
+  background-color: rgb(106, 213, 177);
+}
+
+#main table{ margin: 0 auto; font-size: 1.25em;}   /* HOMEPAGE'S TABLE */
+
+#main th{background-color: #9e9e9e; padding: 0.75em;}
+
+#main td{padding: 0.75em; border-bottom: 1px solid #7d7d7d;}
+
+#main a{
+	padding-left:1em;
+  padding-right: 1em;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0.5em;
+  border-radius: 1em;
+  text-decoration: none;
+}
+
+#main a[id="edit"]{
+  background-color: rgb(255, 255, 117);
+  color: black;
+}
+
+#main a[id="delete"]{
+  background-color: rgb(211, 56, 56);
+  color: whitesmoke;
+}
+
+#main a[id="edit"]:hover, #main a[id="edit"]:active {background-color: rgb(183, 183, 83);}
+
+#main a[id="delete"]:hover, #main a[id="delete"]:active {background-color: rgb(152, 40, 40);}
+
+/* Back Button*/
+
+div#back {text-align: center; font-weight: bolder; height: 8%;}
+
+#back a{
+	padding-left:1.5em;
+  padding-right: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+	color:black;
+  font-size: 1.2em;
+  margin-left: 3%;
+  margin-right: 85%;
+  margin-top: 3em;
+  border-radius: 1em;
+}
+
+#back a:hover, #back a:active {background-color: #9e9e9e;}
+
+/* Booking AND Others*/
+
+div#book_search {          
+  margin-left: 25em;
+  img{width: 65%; margin-bottom: 2em; margin-left: auto; margin-right: auto;}
+}
+
+#book_search input[type="text"] {width: 400px;}
+
+#book_search label{font-size: 1.2em;}
+
+/* #book_search h2{font-size: 2.25em; margin-bottom: 1.5em;}*/
+
+#book_search h3{font-size: 1.5em; }
+
+
+#book_search table{  /*Probably unused*/
+  margin-left: 5em;
+  margin-bottom: 4em;
+  border-style: solid;
+  border-color: #444444;
+  background-color: antiquewhite;
+  font-style: italic;
+  font-size: 1.3em;
+}
+
+#book_search td{
+  padding: 0.2em;
+  width: 400px;
+  text-align: center;
+}
+
+#book_search a{
+	padding-left:1.5em;
+  padding-right: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin: 1.5em;
+	color:black;
+  text-decoration: none;
+  background-color:#a0a0a0;
+  border-radius: 1em;
+} 
+
+#book_search a:hover, #book_search a:active {background-color: #747373;}
+
+#book_search input[type="submit"] {
+  margin-top: 3em;
+  background-color: aquamarine;
+  border: none;
+  border-radius: 3em;
+  width: 6em;
+  height: 2em;
+  font-family: 'Garamond', serif;
+  font-size: 1.5em;
+}
+
+#book_search input[type="submit"]:hover, #book_search input[type="submit"]:active {
+  background-color: rgb(106, 213, 177);
+}
+
+#book_search input[id="reject"] {
+  background-color: rgb(220, 78, 78);
+}
+
+#book_search input[id="reject"]:hover, #book_search input[id="reject"]:active {
+  background-color: rgb(166, 58, 58);
+}
+
+
+
+/* Concert Selection (In booking.php)*/
+
+div#select {
+  label{display: inline-block; width: 500px;text-align: center; margin: 0.2em;}
+
+  input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+  }
+
+  input[type="radio"]+label {
+    font-style: italic;
+    font-size: 1.3em;
+    margin-left: 5em;
+    border-style: solid;
+    border-color: #444444;
+    background-color: antiquewhite;
+  }
+
+  input[type="radio"]:hover+label {background-color: rgb(197, 185, 169);}
+
+  input[type="radio"]:checked+label {background-color: rgb(147, 138, 125);}
+}
+
+/* Zone Selection*/
+
+div#zone{
+  margin-bottom: 4em;
+  text-align: center;
+  input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+    width: 0;
+  }
+  input[type="radio"]+label {
+  font-family: 'Garamond', serif;
+  margin-right: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  border-radius: 30px;
+  }
+
+  input[type="radio"]+label[id="lab_a"]{background-color: #6ac0c8;}
+
+  input[type="radio"]+label[id="lab_b"]{background-color: #9378e3;}
+
+  input[type="radio"]+label[id="lab_c"]{background-color: #fa7fb1;}
+
+  input[type="radio"]+label[id="lab_d"]{background-color: #b38929;}
+
+  input[type="radio"]+label[id="lab_e"]{background-color: #f3ba39;}
+
+  input[type="radio"]+label[id="lab_f"]{background-color: #f66640;;}
+
+  input[type="radio"]:hover+label[id="lab_a"]{background-color: #53979d;}
+
+  input[type="radio"]:hover+label[id="lab_b"]{background-color: #6c58a8;}
+
+  input[type="radio"]:hover+label[id="lab_c"]{background-color: #b85d81;}
+
+  input[type="radio"]:hover+label[id="lab_d"]{background-color: #7c5f1c;}
+
+  input[type="radio"]:hover+label[id="lab_e"]{background-color: #bc912b;}
+
+  input[type="radio"]:hover+label[id="lab_f"]{background-color: #c95333;}
+
+  input[type="radio"]:checked+label[id="lab_a"]{background-color: #43797e; text-decoration: underline;}
+
+  input[type="radio"]:checked+label[id="lab_b"]{background-color: #534481; text-decoration: underline;}
+
+  input[type="radio"]:checked+label[id="lab_c"]{background-color: #974c6a; text-decoration: underline;}
+
+  input[type="radio"]:checked+label[id="lab_d"]{background-color: #5f4915; text-decoration: underline;}
+
+  input[type="radio"]:checked+label[id="lab_e"]{background-color: #9b7723; text-decoration: underline;}
+
+  input[type="radio"]:checked+label[id="lab_f"]{background-color: #a44429; text-decoration: underline;}
+
+  img{width: 55%; margin-bottom: 2em; margin-left: auto; margin-right: auto;}
+}
+
+#zone input[type="submit"] {
+  margin-top: 3em;
+  background-color: aquamarine;
+  border: none;
+  border-radius: 3em;
+  width: 6em;
+  height: 2em;
+  font-family: 'Garamond', serif;
+  font-size: 1.5em;
+}
+
+#zone input[type="submit"]:hover, #zone input[type="button"]:active {
+  background-color: rgb(106, 213, 177);
+}
+
+#zone a{
+	padding-left:1.5em;
+  padding-right: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-top: 3em;
+	color:black;
+  text-decoration: none;
+  font-family: 'Garamond', serif;
+  background-color: rgb(255, 255, 117);
+  border-radius: 1em;
+} 
+
+#zone a:hover, #zone a:active {background-color: rgb(183, 183, 83);}
+
+#zone input[id="logout"]{
+  background-color: rgb(220, 78, 78);
+}
+
+#zone input[id="logout"]:hover, #book_search input[id="logout"]:active {
+  background-color: rgb(166, 58, 58);
+}
+
+
+
+/* Login Page */
+
+/*
+@media screen and (max-width: 800px) {
+  div#left, div#main{
+    width: 100%;  The width is 100%, when the viewport is 800px or smaller
+  }
+  div#content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+*/
